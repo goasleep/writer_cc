@@ -1,0 +1,5 @@
+---
+type: log
+---
+
+# Wiki Log
