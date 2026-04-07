@@ -54,7 +54,8 @@ class ArticleCollector:
         )
 
         # 提取元数据
-        metadata = trafilatura.extract_metadata(html, url=url)
+        metadata_doc = trafilatura.extract_metadata(html, default_url=url)
+        metadata = metadata_doc.as_dict() if metadata_doc else {}
 
         return {
             'content': result,
