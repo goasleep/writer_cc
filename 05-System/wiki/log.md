@@ -39,3 +39,12 @@ type: log
 - 新建 wiki/concepts/服务网格.md
 - 更新 wiki/index.md
 
+## [2026-04-07] lint | wiki 健康检查
+- 修复 index.md：添加 Queries 条目 [[2026-04-07-obsidian-vault-role]]
+- 修复损坏链接：
+  - concepts/LLM Wiki.md: [[LLM Wiki (source)]] → [[LLM Wiki]]
+  - concepts/ConfigMap.md: 注释掉 [[Kubernetes]]
+  - concepts/Secret.md: 注释掉 [[Kubernetes]]
+  - concepts/服务网格.md: 注释掉 [[Istio]]、[[Linkerd]]
+  - concepts/GitOps.md: 注释掉 [[配置即代码]]
+

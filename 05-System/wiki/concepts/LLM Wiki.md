@@ -16,7 +16,7 @@ status: active
 
 ## 关联
 
-- [[LLM Wiki (source)]]
+- [[LLM Wiki]]
 - [[Andrej Karpathy]]
 - [[RAG]]
 - [[Memex]]
