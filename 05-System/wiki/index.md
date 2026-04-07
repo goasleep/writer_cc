@@ -9,6 +9,7 @@ last_updated: 2026-04-07
 
 - [[为什么 AI Agent 框架都用 TypeScript？]]
 - [[LLM Wiki]]
+- [[Kubernetes 配置管理技术选型与云原生实践指南]]
 
 ## Entities
 
@@ -16,6 +17,8 @@ last_updated: 2026-04-07
 - [[LangChain]]
 - [[Vercel]]
 - [[Andrej Karpathy]]
+- [[Apollo]]
+- [[Nacos]]
 
 ## Concepts
 
@@ -25,6 +28,10 @@ last_updated: 2026-04-07
 - [[LLM Wiki]]
 - [[RAG]]
 - [[Memex]]
+- [[ConfigMap]]
+- [[Secret]]
+- [[GitOps]]
+- [[服务网格]]
 
 ## Syntheses
 

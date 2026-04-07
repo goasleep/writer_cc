@@ -28,3 +28,14 @@ type: log
 - 新建 wiki/concepts/Memex.md
 - 更新 wiki/index.md
 
+## [2026-04-07] collect | Kubernetes 配置管理技术选型与云原生实践指南
+- 原文保存到 raw/articles/Kubernetes 配置管理技术选型与云原生实践指南.md
+- 新建 wiki/sources/Kubernetes 配置管理技术选型与云原生实践指南.md
+- 新建 wiki/entities/Apollo.md
+- 新建 wiki/entities/Nacos.md
+- 新建 wiki/concepts/ConfigMap.md
+- 新建 wiki/concepts/Secret.md
+- 新建 wiki/concepts/GitOps.md
+- 新建 wiki/concepts/服务网格.md
+- 更新 wiki/index.md
+

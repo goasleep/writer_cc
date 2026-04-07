@@ -100,12 +100,84 @@ class ClaudeArticleCollector:
             metadata_doc = trafilatura.extract_metadata(html, default_url=url)
             metadata = metadata_doc.as_dict() if metadata_doc else {}
 
+            # 降级策略：内容太少时尝试用 Playwright 获取
+            if not content or len(content.replace('\n', '').replace(' ', '')) < 100:
+                print(f"⚠️ Trafilatura extracted too little content ({len(content or '')} chars), trying Playwright fallback...")
+                pw_result = self._extract_with_playwright(url)
+                if pw_result:
+                    return pw_result
+
             return {
                 'content': content,
                 'metadata': metadata
             }
         except Exception as e:
             print(f"❌ Error extracting content: {e}")
+            return None
+
+    def _extract_with_playwright(self, url):
+        """使用 Playwright 作为降级策略提取 JS 渲染页面内容"""
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            print("⚠️ Playwright not installed, skipping fallback")
+            return None
+
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+                page.goto(url, timeout=30000, wait_until='networkidle')
+                # 等待主要内容加载
+                page.wait_for_timeout(2000)
+
+                # 尝试获取标题
+                title = page.title()
+
+                # 尝试获取正文内容
+                selectors = [
+                    'article',
+                    '[class*="doc-content"]',
+                    '[class*="document-content"]',
+                    '[class*="editor-content"]',
+                    '[class*="rich-text"]',
+                    '[class*="prose"]',
+                    'main',
+                    '.content',
+                    '[role="main"]'
+                ]
+                content = ''
+                for sel in selectors:
+                    el = page.locator(sel).first
+                    if el.count() > 0:
+                        text = el.inner_text(timeout=5000)
+                        if len(text) > 200:
+                            content = text
+                            break
+
+                if not content:
+                    content = page.locator('body').inner_text(timeout=5000)
+
+                # 清理常见 UI 文本
+                content = content.replace('Doubao\nEdit in Doubao\n', '')
+                content = content.replace('Edit in Doubao', '')
+
+                browser.close()
+
+                if len(content.replace('\n', '').replace(' ', '')) < 100:
+                    print("⚠️ Playwright fallback also extracted too little content")
+                    return None
+
+                print(f"✅ Playwright fallback succeeded ({len(content)} chars)")
+                return {
+                    'content': content,
+                    'metadata': {
+                        'title': title,
+                        'sitename': 'Web',
+                    }
+                }
+        except Exception as e:
+            print(f"❌ Playwright fallback failed: {e}")
             return None
 
     def _build_output(self, result, url, include_metadata=True):
