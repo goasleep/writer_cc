@@ -1,0 +1,32 @@
+[project]
+name = "writer-tools"
+version = "0.1.0"
+description = "个人写作库工具集 - Obsidian Vault 集成文章采集与整理"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "trafilatura>=1.6.0",
+    "markdownify>=0.11.6",
+    "beautifulsoup4>=4.12.0",
+    "readability-lxml>=0.8.1",
+    "pyyaml>=6.0.1",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40.0"]
+dev = ["pytest>=7.4.0", "ruff>=0.1.0"]
+
+[project.scripts]
+writer-collect = "writer_tools.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/writer_tools"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
