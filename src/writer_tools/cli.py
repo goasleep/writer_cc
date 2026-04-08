@@ -24,6 +24,8 @@ from writer_tools import (
     BatchCollector,
     create_default_cleaner,
     create_frontmatter,
+    collect_article as pipeline_collect_article,
+    CollectResult,
 )
 
 
@@ -35,25 +37,55 @@ RESOURCES_DIR = VAULT_ROOT / "03-Resources" / "文章收藏"
 
 def cmd_collect(args):
     """采集单篇文章到 raw/articles/"""
-    collector = ClaudeArticleCollector(output_dir=str(RAW_DIR))
-    result = collector.collect(
-        args.url,
-        options={
-            "include_metadata": not args.no_metadata,
-            "include_images": args.images,
-            "save_to_file": True,
-        },
+    from .pipeline import collect_article
+
+    raw_articles_dir = RAW_DIR.parent / "raw" / "articles"
+    result = collect_article(
+        args.url, include_images=args.images, raw_dir=RAW_DIR.parent / "raw"
     )
-    if result["success"]:
+
+    if result.success:
+        filepath = None
+        if args.save_raw:
+            filepath = _save_raw_article(result, raw_articles_dir)
+
         print(f"\n✅ 采集成功")
-        print(f"📄 文件: {result.get('filepath', 'N/A')}")
-        print(f"📝 标题: {result['metadata'].get('title', 'N/A')}")
-        # 输出便于 Claude Code 读取的 JSON
+        print(f"🔧 方法: {result.method}")
+        print(f"📝 标题: {result.metadata.get('title', 'N/A')}")
+        if filepath:
+            print(f"📄 文件: {filepath}")
         if args.json:
-            print(json.dumps(result, ensure_ascii=False, indent=2))
+            print(json.dumps(result.to_dict(), ensure_ascii=False, indent=2))
     else:
-        print(f"\n❌ 失败: {result.get('error', '未知错误')}")
+        print(f"\n❌ 失败: {result.error}")
         sys.exit(1)
+
+
+def _save_raw_article(result, raw_dir: Path) -> str:
+    """将采集结果保存到 raw/articles/"""
+    import re
+    import hashlib
+
+    title = result.metadata.get("title", "")
+    if title:
+        safe_title = re.sub(r'[<>:\"/\\|?*]', "", title)[:80]
+        filename = f"{safe_title}.md"
+    else:
+        url_hash = hashlib.md5(result.final_url.encode()).hexdigest()[:8]
+        filename = f"article_{url_hash}.md"
+
+    filepath = raw_dir / filename
+    counter = 1
+    original_path = filepath
+    while filepath.exists():
+        stem = original_path.stem
+        filepath = raw_dir / f"{stem}_{counter}{original_path.suffix}"
+        counter += 1
+
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(result.content)
+    return str(filepath)
 
 
 def cmd_batch(args):
@@ -143,6 +175,7 @@ def main():
     collect_parser.add_argument("--no-metadata", action="store_true", help="不包含元数据")
     collect_parser.add_argument("--images", action="store_true", default=True, help="包含图片")
     collect_parser.add_argument("--json", action="store_true", help="输出完整 JSON")
+    collect_parser.add_argument("--save-raw", action="store_true", default=True, help="保存原始提取内容到 raw/articles/")
 
     # batch
     batch_parser = subparsers.add_parser("batch", help="批量采集文章")
@@ -180,6 +213,7 @@ def main():
         args.no_metadata = False
         args.images = True
         args.json = False
+        args.save_raw = True
 
     if args.command == "collect":
         cmd_collect(args)
