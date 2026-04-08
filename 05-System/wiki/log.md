@@ -48,3 +48,30 @@ type: log
   - concepts/服务网格.md: 注释掉 [[Istio]]、[[Linkerd]]
   - concepts/GitOps.md: 注释掉 [[配置即代码]]
 
+## [2026-04-08] collect | 当AI 可以做一切，剩下的护城河只有这5种
+- 原文保存到 raw/articles/当AI 可以做一切，剩下的护城河只有这5种-虎嗅网.md
+- 新建 wiki/sources/当AI 可以做一切，剩下的护城河只有这5种-虎嗅网.md
+- 新建 wiki/entities/Michael Bloch.md
+- 新建 wiki/entities/Orchard AI.md
+- 新建 wiki/entities/DoorDash.md
+- 新建 wiki/entities/Anduril.md
+- 新建 wiki/entities/Base Power.md
+- 新建 wiki/concepts/护城河.md
+- 新建 wiki/concepts/网络效应.md
+- 新建 wiki/concepts/专有数据.md
+- 新建 wiki/concepts/监管许可.md
+- 新建 wiki/concepts/元护城河.md
+- 更新 wiki/index.md
+
+## [2026-04-08] collect | 如何在AI时代，找回你被埋没的创造力。
+- 原文保存到 raw/articles/如何在AI时代，找回你被埋没的创造力。.md
+- 新建 wiki/sources/如何在AI时代，找回你被埋没的创造力。.md
+- 新建 wiki/concepts/认知失调.md
+- 新建 wiki/concepts/默认模式网络.md
+- 新建 wiki/concepts/原型思维.md
+- 新建 wiki/concepts/MVP.md
+- 新建 wiki/concepts/自我决定理论.md
+- 新建 wiki/concepts/升番.md
+- 新建 wiki/concepts/游戏的人.md
+- 更新 wiki/index.md
+

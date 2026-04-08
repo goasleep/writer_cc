@@ -10,9 +10,11 @@ updated_at: 2026-04-08T00:00:00
 
 ## human-written (0-20)
 - [[Building effective agents]] — ai_flavor: 15
+- [[当AI 可以做一切，剩下的护城河只有这5种-虎嗅网]] — ai_flavor: 15
 
 ## lightly-edited (21-40)
 
 ## ai-assisted (41-60)
 
 ## ai-heavy (61-100)
+- [[如何在AI时代，找回你被埋没的创造力。]] — ai_flavor: 90

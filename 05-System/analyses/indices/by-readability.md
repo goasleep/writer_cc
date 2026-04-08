@@ -10,6 +10,8 @@ updated_at: 2026-04-08T00:00:00
 
 ## excellent (80-100)
 - [[Building effective agents]] — readability: 88
+- [[当AI 可以做一切，剩下的护城河只有这5种-虎嗅网]] — readability: 82
+- [[如何在AI时代，找回你被埋没的创造力。]] — readability: 85
 
 ## good (60-79)
 
