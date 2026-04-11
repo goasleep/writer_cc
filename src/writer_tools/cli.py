@@ -39,9 +39,9 @@ def cmd_collect(args):
     """采集单篇文章到 raw/articles/"""
     from .pipeline import collect_article
 
-    raw_articles_dir = RAW_DIR.parent / "raw" / "articles"
+    raw_articles_dir = RAW_DIR
     result = collect_article(
-        args.url, include_images=args.images, raw_dir=RAW_DIR.parent / "raw"
+        args.url, include_images=args.images, raw_dir=RAW_DIR.parent
     )
 
     if result.success:
