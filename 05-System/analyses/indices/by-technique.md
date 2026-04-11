@@ -41,3 +41,66 @@ updated_at: 2026-04-08T00:00:00
 
 ## quote-driven
 - [[如何在AI时代，找回你被埋没的创造力。]] — technique: 76
+
+## 场景化举例
+- [[Trace Context 关键字段]] — technique: 60
+
+## 表格对比
+- [[Trace Context 关键字段]] — technique: 60
+
+## 代码片段
+- [[Trace Context 关键字段]] — technique: 60
+
+## 问题驱动
+- [[Trace Context 关键字段]] — technique: 60
+
+## quantified-results
+- [[Cutting Python Web App Memory Over 31%]] — technique: 85
+
+## comparative-tables
+- [[Cutting Python Web App Memory Over 31%]] — technique: 85
+
+## progressive-reveal
+- [[Cutting Python Web App Memory Over 31%]] — technique: 85
+
+## actionable-insights
+- [[Cutting Python Web App Memory Over 31%]] — technique: 85
+
+## multi-agent-dialogue
+- [[Claude Pitfalls Database Indexes  Lincoln Loop]] — technique: 74
+
+## technical-deconstruction
+- [[Claude Pitfalls Database Indexes  Lincoln Loop]] — technique: 74
+
+## progressive-revelation
+- [[Claude Pitfalls Database Indexes  Lincoln Loop]] — technique: 74
+
+## counter-intuitive-finding
+- [[Claude Pitfalls Database Indexes  Lincoln Loop]] — technique: 74
+
+## 辩证论证
+- [[Scaling a Monolith to 1M LOC 113 Pragmatic Lessons from Tech Lead to CTO]] — technique: 70
+
+## 实例驱动
+- [[Scaling a Monolith to 1M LOC 113 Pragmatic Lessons from Tech Lead to CTO]] — technique: 70
+
+## 分类框架
+- [[构建 Claude Code 的经验：我们如何使用 Skills]] — technique: 80
+
+## 四象限框架
+- [[AI 发展太快跟不上？一张四象限图帮你做减法]] — technique: 78
+
+## 对比论证
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72
+
+## 现身说法
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72
+
+## 场景化描述
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72
+
+## 金句点缀
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72
+
+## 技术细节+用户视角
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72

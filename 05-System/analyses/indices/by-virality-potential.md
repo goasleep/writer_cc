@@ -18,3 +18,4 @@ updated_at: 2026-04-08T00:00:00
 ## niche (40-59)
 
 ## limited (0-39)
+- [[Trace Context 关键字段]] — virality_potential: 30

@@ -75,3 +75,47 @@ type: log
 - 新建 wiki/concepts/游戏的人.md
 - 更新 wiki/index.md
 
+## [2026-04-09] collect | Trace Context 关键字段
+- 原文保存到 raw/articles/Trace Context 关键字段.md
+- 新建 wiki/sources/Trace Context 关键字段.md
+- 新建 wiki/concepts/W3C Trace Context.md
+- 新建 wiki/concepts/分布式追踪.md
+- 新建 wiki/concepts/OpenTelemetry.md
+- 新建 wiki/concepts/微服务.md
+- 更新 wiki/index.md
+
+## [2026-04-11] collect | 很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？
+- 原文保存到 raw/articles/很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？.md
+- 新建 wiki/sources/很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？.md
+- 新建 wiki/entities/Hermes Agent.md
+- 更新 wiki/entities/OpenClaw.md
+- 新建 wiki/entities/Nous Research.md
+- 新建 wiki/concepts/程序性记忆.md
+- 新建 wiki/concepts/AI 助理.md
+- 新建 wiki/concepts/安全扫描.md
+- 新建 wiki/concepts/容器隔离.md
+- 更新 wiki/index.md
+
+## [2026-04-11] collect | Cutting Python Web App Memory Over 31%
+- 原文保存到 raw/articles/Cutting Python Web App Memory Over 31%.md
+- 新建 wiki/sources/Cutting Python Web App Memory Over 31%.md
+- 新建 wiki/entities/Michael Kennedy.md
+- 新建 wiki/entities/Granian.md
+- 新建 wiki/entities/Quart.md
+- 新建 wiki/concepts/Async Workers.md
+- 新建 wiki/concepts/Import Isolation.md
+- 新建 wiki/concepts/Raw+DC Pattern.md
+- 新建 wiki/concepts/Memory Optimization.md
+- 新建 wiki/concepts/Local Imports.md
+- 更新 wiki/index.md
+
+## [2026-04-11] batch | 4 articles collected
+- 原文保存到 raw/articles/
+- Claude Pitfalls Database Indexes  Lincoln Loop.md
+- Scaling a Monolith to 1M LOC 113 Pragmatic Lessons from Tech Lead to CTO.md
+- 构建 Claude Code 的经验：我们如何使用 Skills.md
+- AI 发展太快跟不上？一张四象限图帮你做减法.md
+- 新建 wiki/sources/Claude Pitfalls Database Indexes  Lincoln Loop.md
+- 新建 wiki/concepts/GIN Index.md, Partial Index.md, Concurrent Index Creation.md, AI Code Review.md
+- 更新 wiki/index.md
+

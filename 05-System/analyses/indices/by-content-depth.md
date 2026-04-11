@@ -14,6 +14,7 @@ updated_at: 2026-04-08T00:00:00
 ## solid (60-79)
 - [[当AI 可以做一切，剩下的护城河只有这5种-虎嗅网]] — content_depth: 78
 - [[如何在AI时代，找回你被埋没的创造力。]] — content_depth: 72
+- [[Trace Context 关键字段]] — content_depth: 65
 
 ## surface (40-59)
 

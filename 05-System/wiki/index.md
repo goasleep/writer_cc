@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-04-08
+last_updated: 2026-04-11
 ---
 
 # Wiki Index
@@ -12,10 +12,22 @@ last_updated: 2026-04-08
 - [[Kubernetes 配置管理技术选型与云原生实践指南]]
 - [[当AI 可以做一切，剩下的护城河只有这5种-虎嗅网]]
 - [[如何在AI时代，找回你被埋没的创造力。]]
+- [[Trace Context 关键字段]]
+- [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]]
+- [[Cutting Python Web App Memory Over 31%]]
+- [[Claude Pitfalls Database Indexes  Lincoln Loop]]
+- [[Scaling a Monolith to 1M LOC 113 Pragmatic Lessons from Tech Lead to CTO]]
+- [[构建 Claude Code 的经验：我们如何使用 Skills]]
+- [[AI 发展太快跟不上？一张四象限图帮你做减法]]
 
 ## Entities
 
 - [[OpenClaw]]
+- [[Hermes Agent]]
+- [[Nous Research]]
+- [[Michael Kennedy]]
+- [[Granian]]
+- [[Quart]]
 - [[LangChain]]
 - [[Vercel]]
 - [[Andrej Karpathy]]
@@ -30,6 +42,19 @@ last_updated: 2026-04-08
 ## Concepts
 
 - [[AI Agent]]
+- [[AI 助理]]
+- [[程序性记忆]]
+- [[安全扫描]]
+- [[容器隔离]]
+- [[Async Workers]]
+- [[Import Isolation]]
+- [[Raw+DC Pattern]]
+- [[Memory Optimization]]
+- [[Local Imports]]
+- [[GIN Index]]
+- [[Partial Index]]
+- [[Concurrent Index Creation]]
+- [[AI Code Review]]
 - [[TypeScript]]
 - [[npm]]
 - [[LLM Wiki]]
@@ -51,6 +76,10 @@ last_updated: 2026-04-08
 - [[自我决定理论]]
 - [[升番]]
 - [[游戏的人]]
+- [[W3C Trace Context]]
+- [[分布式追踪]]
+- [[OpenTelemetry]]
+- [[微服务]]
 
 ## Syntheses
 

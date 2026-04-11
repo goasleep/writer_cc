@@ -14,6 +14,7 @@ updated_at: 2026-04-08T00:00:00
 - [[如何在AI时代，找回你被埋没的创造力。]] — readability: 85
 
 ## good (60-79)
+- [[Trace Context 关键字段]] — readability: 75
 
 ## moderate (40-59)
 

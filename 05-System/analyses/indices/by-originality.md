@@ -16,5 +16,6 @@ updated_at: 2026-04-08T00:00:00
 - [[如何在AI时代，找回你被埋没的创造力。]] — originality: 70
 
 ## derivative (40-59)
+- [[Trace Context 关键字段]] — originality: 40
 
 ## unoriginal (0-39)

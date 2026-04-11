@@ -13,6 +13,7 @@ updated_at: 2026-04-08T00:00:00
 - [[当AI 可以做一切，剩下的护城河只有这5种-虎嗅网]] — ai_flavor: 15
 
 ## lightly-edited (21-40)
+- [[Trace Context 关键字段]] — ai_flavor: 35
 
 ## ai-assisted (41-60)
 
