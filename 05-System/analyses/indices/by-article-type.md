@@ -1,7 +1,7 @@
 ---
 type: analysis-index
 index_type: by-article-type
-updated_at: 2026-04-08T00:00:00
+updated_at: 2026-04-11T23:30:00
 ---
 
 # 按文章类型分类
@@ -35,3 +35,22 @@ updated_at: 2026-04-08T00:00:00
 
 ## 方法论框架
 - [[AI 发展太快跟不上？一张四象限图帮你做减法]] — avg: 83, quality_tier: S
+
+## technical-tool-introduction
+- [[Python introducing profiling-explorer]] — avg: 75, quality_tier: B
+
+## technical-business-hybrid
+- [[Async Python's Determinism Builds Reliable AI Futures]] — avg: 66, quality_tier: B
+
+## technical-guide-promotional
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — avg: 78, quality_tier: A
+
+## 技术选型指南
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — avg: 76, quality_tier: A
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — avg: 71, quality_tier: A
+
+## technical-pattern-documentation
+- [[LLM Wiki]] — avg: 88, quality_tier: S
+
+## 技术趋势分析
+- [[为什么 AI Agent 框架都用 TypeScript？]] — avg: 76, quality_tier: A

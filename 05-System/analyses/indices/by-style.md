@@ -1,7 +1,7 @@
 ---
 type: analysis-index
 index_type: by-style
-updated_at: 2026-04-08T00:00:00
+updated_at: 2026-04-11T23:30:00
 ---
 
 # 按风格分类
@@ -100,3 +100,75 @@ updated_at: 2026-04-08T00:00:00
 
 ## 对比分析
 - [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — style: 85
+
+## technical-tutorial
+- [[Python introducing profiling-explorer]] — style: 80
+
+## product-announcement
+- [[Python introducing profiling-explorer]] — style: 80
+
+## personal-voice
+- [[Python introducing profiling-explorer]] — style: 80
+
+## technical-explainer
+- [[Async Python's Determinism Builds Reliable AI Futures]] — style: 70
+
+## business-facing
+- [[Async Python's Determinism Builds Reliable AI Futures]] — style: 70
+
+## educational
+- [[Async Python's Determinism Builds Reliable AI Futures]] — style: 70
+
+## analogy-driven
+- [[Async Python's Determinism Builds Reliable AI Futures]] — style: 70
+
+## conversational
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — style: 80
+
+## authoritative
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — style: 80
+
+## action-oriented
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — style: 80
+
+## commercial
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — style: 80
+
+## 技术综述
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — style: 72
+
+## 系统性分析
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — style: 72
+
+## 实践指南
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — style: 72
+
+## 技术综述型
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — style: 68
+
+## 对比分析型
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — style: 68
+
+## 决策框架型
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — style: 68
+
+## technical-guide
+- [[LLM Wiki]] — style: 85
+
+## pattern-document
+- [[LLM Wiki]] — style: 85
+
+## pragmatic
+- [[LLM Wiki]] — style: 85
+
+## educational
+- [[LLM Wiki]] — style: 85
+
+## 对话式
+- [[为什么 AI Agent 框架都用 TypeScript？]] — style: 80
+
+## 技术分析
+- [[为什么 AI Agent 框架都用 TypeScript？]] — style: 80
+
+## 对比论证
+- [[为什么 AI Agent 框架都用 TypeScript？]] — style: 80

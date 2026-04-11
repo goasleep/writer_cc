@@ -19,6 +19,9 @@ last_updated: 2026-04-11
 - [[Scaling a Monolith to 1M LOC 113 Pragmatic Lessons from Tech Lead to CTO]]
 - [[构建 Claude Code 的经验：我们如何使用 Skills]]
 - [[AI 发展太快跟不上？一张四象限图帮你做减法]]
+- [[Python introducing profiling-explorer]]
+- [[Async Python's Determinism Builds Reliable AI Futures]]
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]]
 
 ## Entities
 
@@ -38,6 +41,17 @@ last_updated: 2026-04-11
 - [[DoorDash]]
 - [[Anduril]]
 - [[Base Power]]
+- [[Adam Johnson]]
+- [[Rippling]]
+- [[Pablo Galindo Salgado]]
+- [[Armin Rigo]]
+- [[Guido van Rossum]]
+- [[Łukasz Langa]]
+- [[AITechScope]]
+- [[The AI Corner]]
+- [[Gartner]]
+- [[Deloitte]]
+- [[Grand View Research]]
 
 ## Concepts
 
@@ -80,6 +94,19 @@ last_updated: 2026-04-11
 - [[分布式追踪]]
 - [[OpenTelemetry]]
 - [[微服务]]
+- [[Python Profiling]]
+- [[cProfile]]
+- [[pstats]]
+- [[Sampling Profiler]]
+- [[Tracing Profiler]]
+- [[profiling-explorer]]
+- [[Tachyon Profiler]]
+- [[asyncio]]
+- [[Determinism]]
+- [[MLOps]]
+- [[Explainable AI]]
+- [[Run Loop]]
+- [[No-code Platforms]]
 
 ## Syntheses
 

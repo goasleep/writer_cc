@@ -119,3 +119,13 @@ type: log
 - 新建 wiki/concepts/GIN Index.md, Partial Index.md, Concurrent Index Creation.md, AI Code Review.md
 - 更新 wiki/index.md
 
+## [2026-04-11] collect | 3 articles collected
+- 原文保存到 raw/articles/
+- Python introducing profiling-explorer.md
+- Async Python's Determinism Builds Reliable AI Futures - insighthub47.com.md
+- Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One..md
+- 新建 wiki/sources/Python introducing profiling-explorer.md, Async Python's Determinism Builds Reliable AI Futures.md, Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One..md
+- 新建 wiki/entities/Adam Johnson.md, Rippling.md, Pablo Galindo Salgado.md, Armin Rigo.md, Guido van Rossum.md, Łukasz Langa.md, AITechScope.md, The AI Corner.md, Gartner.md, Deloitte.md, Grand View Research.md
+- 新建 wiki/concepts/Python Profiling.md, cProfile.md, pstats.md, Sampling Profiler.md, Tracing Profiler.md, profiling-explorer.md, Tachyon Profiler.md, asyncio.md, Determinism.md, MLOps.md, Explainable AI.md, Run Loop.md, No-code Platforms.md
+- 更新 wiki/index.md
+

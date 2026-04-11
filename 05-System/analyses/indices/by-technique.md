@@ -1,7 +1,7 @@
 ---
 type: analysis-index
 index_type: by-technique
-updated_at: 2026-04-08T00:00:00
+updated_at: 2026-04-11T23:30:00
 ---
 
 # 按技巧分类
@@ -104,3 +104,84 @@ updated_at: 2026-04-08T00:00:00
 
 ## 技术细节+用户视角
 - [[很多人突然不玩小龙虾而用Hermes Agent了。我替你试了，跟小龙虾到底有啥不同？]] — technique: 72
+
+## problem-solution
+- [[Python introducing profiling-explorer]] — technique: 72
+
+## feature-showcase
+- [[Python introducing profiling-explorer]] — technique: 72
+
+## historical-context
+- [[Python introducing profiling-explorer]] — technique: 72
+
+## practical-example
+- [[Python introducing profiling-explorer]] — technique: 72
+
+## metaphor-use
+- [[Async Python's Determinism Builds Reliable AI Futures]] — technique: 68
+
+## comparison-table
+- [[Async Python's Determinism Builds Reliable AI Futures]] — technique: 68
+
+## expert-quotes
+- [[Async Python's Determinism Builds Reliable AI Futures]] — technique: 68
+
+## faq-section
+- [[Async Python's Determinism Builds Reliable AI Futures]] — technique: 68
+
+## section-anchors
+- [[Async Python's Determinism Builds Reliable AI Futures]] — technique: 68
+
+## contrast-framing
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — technique: 75
+
+## data-driven-proof
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — technique: 75
+
+## paywall-teaser
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — technique: 75
+
+## stepwise-framework
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — technique: 75
+
+## repetition-for-emphasis
+- [[Everyone Is Talking About AI Agents. Most People Have No Idea How to Build One.]] — technique: 75
+
+## 对比分析
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — technique: 80
+
+## 演进路径
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — technique: 80
+
+## 决策框架
+- [[Kubernetes 配置管理技术选型与云原生实践指南]] — technique: 80
+
+## 对比表格
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — technique: 75
+
+## 多维度评估模型
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — technique: 75
+
+## 分阶段实施建议
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — technique: 75
+
+## 技术选型决策框架
+- [[Kubernetes配置管理技术选型与云原生实践指南 - Doubao]] — technique: 75
+
+## analogy
+- [[LLM Wiki]] — technique: 88
+
+## framework-building
+- [[LLM Wiki]] — technique: 88
+
+## concrete-examples
+- [[LLM Wiki]] — technique: 88
+
+## historical-context
+- [[LLM Wiki]] — technique: 88
+
+## 设问引导
+- [[为什么 AI Agent 框架都用 TypeScript？]] — technique: 70
+
+## 场景化阐述
+- [[为什么 AI Agent 框架都用 TypeScript？]] — technique: 70
