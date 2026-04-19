@@ -40,3 +40,11 @@ Thumbs.db
 
 # Project
 .claude/skills/
+.claude/settings.json
+.claude/settings.local.json
+
+# Playwright MCP
+.playwright-mcp/
+
+# Memory system
+.remember/
