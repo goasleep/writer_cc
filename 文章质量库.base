@@ -1,0 +1,235 @@
+filters:
+  and:
+    - file.folder == "05-System/analyses/articles"
+    - file.ext == "md"
+    - type == "article-analysis"
+formulas:
+  content_depth_stars: if(score_content_depth >= 90, "⭐⭐⭐⭐⭐", if(score_content_depth >= 80, "⭐⭐⭐⭐", if(score_content_depth >= 70, "⭐⭐⭐", if(score_content_depth >= 60, "⭐⭐", "⭐"))))
+  tier_badge: if(quality_tier == "S", "🏆 S", if(quality_tier == "A", "🥇 A", if(quality_tier == "B", "🥈 B", "🥉 C")))
+  language_flag: if(language == "zh-CN" || language == "zh", "🇨🇳 中文", if(language == "en" || language == "en-US", "🇺🇸 English", language))
+views:
+  - type: table
+    name: 📊 全览
+    order:
+      - file.name
+      - source_title
+      - formula.tier_badge
+      - score_content_depth
+      - score_readability
+      - score_originality
+      - score_ai_flavor
+      - score_technique
+      - formula.language_flag
+    sort:
+      - property: formula.tier_badge
+        direction: ASC
+      - property: score_content_depth
+        direction: DESC
+    limit: 200
+    columnSize:
+      file.name: 180
+      formula.tier_badge: 80
+      formula.language_flag: 100
+  - type: table
+    name: 🏆 质量分级
+    groupBy:
+      property: quality_tier
+      direction: DESC
+    order:
+      - file.name
+      - source_title
+      - score_content_depth
+      - score_technique
+      - score_originality
+    sort:
+      - property: score_content_depth
+        direction: DESC
+    limit: 200
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_content_depth: 90
+      score_technique: 90
+      score_originality: 90
+  - type: table
+    name: ⭐ S/A 级精华
+    filters:
+      and:
+        - quality_tier == "S" || quality_tier == "A"
+    order:
+      - file.name
+      - source_title
+      - quality_tier
+      - score_content_depth
+      - score_readability
+      - score_originality
+      - score_technique
+    sort:
+      - property: quality_tier
+        direction: ASC
+      - property: score_content_depth
+        direction: DESC
+    limit: 200
+    columnSize:
+      file.name: 180
+      source_title: 280
+      quality_tier: 80
+      score_content_depth: 90
+      score_readability: 90
+      score_originality: 90
+      score_technique: 90
+  - type: table
+    name: 💡 高原创
+    filters:
+      and:
+        - score_originality >= 80
+    order:
+      - file.name
+      - source_title
+      - score_originality
+      - score_content_depth
+      - score_style
+      - quality_tier
+    sort:
+      - property: score_originality
+        direction: DESC
+    limit: 100
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_originality: 100
+      score_content_depth: 100
+      score_style: 100
+      quality_tier: 90
+  - type: table
+    name: 📖 高可读
+    filters:
+      and:
+        - score_readability >= 80
+    order:
+      - file.name
+      - source_title
+      - score_readability
+      - score_content_depth
+      - score_style
+      - quality_tier
+    sort:
+      - property: score_readability
+        direction: DESC
+    limit: 100
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_readability: 100
+      score_content_depth: 100
+      score_style: 100
+      quality_tier: 90
+  - type: table
+    name: 🗣️ 极具人味
+    filters:
+      and:
+        - score_ai_flavor >= 70
+    order:
+      - file.name
+      - source_title
+      - score_ai_flavor
+      - score_readability
+      - score_content_depth
+      - quality_tier
+    sort:
+      - property: score_ai_flavor
+        direction: DESC
+    limit: 100
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_ai_flavor: 100
+      score_readability: 100
+      score_content_depth: 100
+      quality_tier: 90
+  - type: table
+    name: 🛠️ 高技巧
+    filters:
+      and:
+        - score_technique >= 80
+    order:
+      - file.name
+      - source_title
+      - score_technique
+      - score_structure
+      - score_content_depth
+      - quality_tier
+    sort:
+      - property: score_technique
+        direction: DESC
+    limit: 100
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_technique: 100
+      score_structure: 100
+      score_content_depth: 100
+      quality_tier: 90
+  - type: table
+    name: 🏗️ 强结构
+    filters:
+      and:
+        - score_structure >= 80
+    order:
+      - file.name
+      - source_title
+      - score_structure
+      - score_technique
+      - score_content_depth
+      - quality_tier
+    sort:
+      - property: score_structure
+        direction: DESC
+    limit: 100
+    columnSize:
+      file.name: 180
+      source_title: 300
+      score_structure: 100
+      score_technique: 100
+      score_content_depth: 100
+      quality_tier: 90
+  - type: table
+    name: 📚 按类型
+    groupBy:
+      property: article_type
+      direction: ASC
+    order:
+      - file.name
+      - source_title
+      - quality_tier
+      - score_content_depth
+    sort:
+      - property: score_content_depth
+        direction: DESC
+    limit: 200
+    columnSize:
+      file.name: 180
+      source_title: 300
+      quality_tier: 90
+      score_content_depth: 90
+  - type: table
+    name: 🌐 按语言
+    groupBy:
+      property: language
+      direction: ASC
+    order:
+      - file.name
+      - source_title
+      - quality_tier
+      - score_content_depth
+      - score_readability
+    sort:
+      - property: score_content_depth
+        direction: DESC
+    limit: 200
+    columnSize:
+      file.name: 180
+      source_title: 300
+      quality_tier: 90
+      score_content_depth: 90
+      score_readability: 90

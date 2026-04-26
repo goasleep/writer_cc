@@ -55,6 +55,9 @@ def extract_with_readability(html: str, url: str) -> Optional[dict]:
         doc = Document(html)
         title = doc.title()
         content_html = doc.summary()
+
+        # 使用 markdownify 将 HTML 转换为 markdown
+        # markdownify 默认会将 <img> 转换为 ![alt](src) 格式
         content_md = md(content_html, heading_style="ATX")
 
         if not content_md or len(content_md.strip()) < 50:

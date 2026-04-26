@@ -3,15 +3,24 @@ type: article-analysis
 source_title: "{{SOURCE_TITLE}}"
 source_url: "{{SOURCE_URL}}"
 analyzed_at: "{{ANALYZED_AT}}"
-scores:
-  content_depth: 0
-  readability: 0
-  originality: 0
-  ai_flavor: 0
-  virality_potential: 0
-  structure: 0
-  style: 0
-  technique: 0
+# ━━━ 评分字段（供 Bases 和 Dataview 使用，统一为扁平格式）━━━
+score_content_depth: 0
+score_readability: 0
+score_originality: 0
+score_ai_flavor: 0
+score_virality_potential: 0
+score_structure: 0
+score_style: 0
+score_technique: 0
+# ━━━ quality_tier 严格规范 ━━━
+# 取值：仅限 S / A / B / C 四个单字母（必须加双引号）
+# 禁止："S-tier" / "S级" / "excellent" / "good" 等任何其他写法
+# ━━━ 等级标准 ━━━
+#   S: 均分 80+，至少 3 个维度 85+，兼具深度、原创性与传播力
+#   A: 均分 70-79，整体质量优秀，无明显短板
+#   B: 均分 60-69，有 1-2 个明显短板（如深度或传播力不足）
+#   C: 均分 <60，整体质量较差，多数维度不及格
+# ━━━ 正确示例：quality_tier: "S"  ━━━ 错误示例：quality_tier: "S-tier" ━━━
 quality_tier: ""
 style_tags: []
 technique_tags: []
@@ -66,6 +75,8 @@ language: ""
 - 41-60：部分段落像 AI，有模式化表达
 - 61-80：自然的人类写作，有个性化的语气
 - 81-100：极具人味，有情感起伏，仿佛作者在你面前说话
+
+**注意**：与其他维度一致，**越高越好**（高人味 = 更像人类）
 
 **分析：**
 [在此处写 2-4 句分析：语气是否自然？是否有真实的个人经验？是否存在 AI 常见的套话？]

@@ -121,6 +121,47 @@ Vault 采用双层架构：
 
 ---
 
+## Bases 文章质量库
+
+Vault 根目录的 `文章质量库.base` 是 Obsidian Bases 数据库视图，可对 `05-System/analyses/articles` 下的文章分析数据进行交互式筛选和过滤。
+
+### 前置条件
+
+- Obsidian v1.9.0+，已启用 **Bases** 核心插件
+
+### 10 个预设视图
+
+| 视图 | 筛选条件 |
+|------|---------|
+| 📊 全览 | 所有文章，按深度降序 |
+| 🏆 质量分级 | 按 S/A/B/C `groupBy` 分组 |
+| ⭐ S/A 级精华 | `quality_tier == "S" \|\| "A"` |
+| 💡 高原创 | `score_originality >= 80` |
+| 📖 高可读 | `score_readability >= 80` |
+| 🗣️ 极具人味 | `score_ai_flavor >= 70` |
+| 🛠️ 高技巧 | `score_technique >= 80` |
+| 🏗️ 强结构 | `score_structure >= 80` |
+| 📚 按类型 | 按 `article_type` 分组 |
+| 🌐 按语言 | 按 `language` 分组 |
+
+### Bases vs Dataview
+
+- **Bases**：交互式浏览、快速筛选、多视图切换、直接编辑属性
+- **Dataview**：复杂查询、笔记内嵌表格、与内容联动
+
+两者共用同一套 `score_*` 扁平化字段，查询语法完全一致。
+
+### 故障排查
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| 视图空白 | 文件路径不匹配 | 确认 `.base` 中的 `file.folder` 路径正确 |
+| 分数列为文本 | 字段类型识别错误 | 确保 frontmatter 中值为纯数字（无引号） |
+| 过滤不生效 | Bases 版本过旧 | 升级到 Obsidian v1.9.1+ |
+| 分组异常 | 空值处理 | 确保 `quality_tier` 和 `article_type` 都有值 |
+
+---
+
 ## 许可证
 
 MIT License
